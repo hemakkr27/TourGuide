@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+input {
+    margin-bottom: 10px;
+}
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+	
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    input[type="tel"],
+    input[type="text"],
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .button-container button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .button-container button:hover {
+      background-color: #45a049;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+  
+  <script>
+  function validatePhoneNumberAndShowOTP() {
+    var phoneNumber = document.getElementById("phone").value;
+    var phoneNumberPattern = /^\d{10}$/; // Regular expression for 10-digit phone number
+
+    if (!phoneNumber.match(phoneNumberPattern)) {
+      alert("Please enter a valid 10-digit phone number.");
+      return;
+    }
+
+    // Phone number is valid, proceed to show OTP
+    showOTP();
+  }
+
+  
+    function showOTP() {
+      var phoneNumber = document.getElementById("phone").value;
+      // Perform validation or formatting on the phone number if needed
+      // Show OTP box and hide phone box
+      document.getElementById("phoneBox").style.display = "none";
+      document.getElementById("otpBox").style.display = "block";
+      document.getElementById("otpMessage").textContent = "OTP has been sent to " + phoneNumber;
+
+      // Auto-fill OTP field
+      var otp = generateOTP(); // Replace with your OTP generation logic
+      document.getElementById("otp").value = otp;
+	  
+	  const urlParams = new URLSearchParams(window.location.search);
+      var myParam = urlParams.get('id');
+	  
+	 document.getElementById("tirthcode").value = myParam;
+	 
+    }
+
+    function verifyOTP() {
+      var otp = document.getElementById("otp").value;
+      // Perform verification of the OTP here
+      // Show image upload box and hide OTP box
+      document.getElementById("otpBox").style.display = "none";
+      document.getElementById("imageBox").style.display = "block";
+    }
+
+    function generateOTP() {
+      // Replace this function with your OTP generation logic
+      var digits = "0123456789";
+      var OTP = "";
+      for (var i = 0; i < 6; i++) {
+        OTP += digits[Math.floor(Math.random() * 10)];
+      }
+      return OTP;
+    }
+  </script>
+  
+      <script type="text/javascript">
+        window.onload = function () {
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const myParam = urlParams.get('id');
+
+            var element = document.getElementById(myParam).style.display = "block";
+
+            //alert(myParam);			
+			
+	
+        
+    };
+
+
+        
+
+    </script>
+	
+	
+	<script>
+	function myfunction() {
+	  const urlParams = new URLSearchParams(window.location.search);
+            const myParam = urlParams.get('id');
+			var myParam;
+			location.href = 'process_form.php?id='+myParam;
+			}
+			
+			
+			
+	</script>
+  
+</head>
+<body>
+  <div class="container">
+    <div id="phoneBox">
+      <h2>Enter Phone Number</h2>
+	  
+	
+	  
+      <form action="process_form.php" method="post" enctype="multipart/form-data">
+        <input type="tel" name='phone' id="phone" placeholder="Phone number" />
+        <br />
+        <button type="button" onclick="validatePhoneNumberAndShowOTP()">Get OTP</button>
+     
+    </div>
+
+    <div id="otpBox" style="display: none;">
+      <h2>Verify OTP</h2>
+      <p id="otpMessage"></p>
+     
+        <input type="text" name='otp' id="otp" placeholder="Enter OTP" value="<?php echo $otp; ?>" required />
+		 <input type="hidden" name='tirthcode' id="tirthcode" placeholder="Enter OTP" value="" required />
+        <br />
+        <button type="button" onclick="verifyOTP()">Verify</button>
+      
+    </div>
+
+    <div id="imageBox" style="display: none;">
+      <h2>Upload Image</h2>
+     
+         
+        <input type="file" id="image" name="image" accept="image/*" required><br><br>
+        <br />
+        <!-- <button type="submit" name="submit">Upload</button> -->
+		  <button type="submit" name="submit"  onclick='myfunction()'>Upload</button>
+		
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>

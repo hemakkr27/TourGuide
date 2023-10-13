@@ -1,0 +1,3091 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- for styling -->
+     <style>
+
+
+
+        .cta-100 {
+            <!-- margin-top: 100px;
+            padding-left: 8%; -->
+            padding-top: 7%;
+        }
+
+        .col-md-4 {
+            padding-bottom: 20px;
+        }
+
+        .white {
+            color: #fff !important;
+        }
+
+        .mt {
+            float: left;
+            margin-top: -20px;
+            padding-top: 20px;
+        }
+
+        .bg-blue-ui {
+            background-color: green !important;
+        }
+
+        figure img {
+            width: 300px;
+        }
+
+        #blogCarousel {
+            padding-bottom: 100px;
+        }
+
+        .blog .carousel-indicators {
+            left: 0;
+            top: -50px;
+            height: 50%;
+        }
+
+
+            /* The colour of the indicators */
+
+            .blog .carousel-indicators li {
+                background: #708198;
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+            }
+
+            .blog .carousel-indicators .active {
+                background: #0fc9af;
+            }
+
+
+
+
+        .item-carousel-blog-block {
+            outline: medium none;
+            padding: 15px;
+        }
+
+        .item-box-blog {
+            border: 1px solid #e9b743de;
+            z-index: 4;
+            padding: 10px;
+        }
+
+        .item-box-blog-image {
+            position: relative;
+        }
+
+            .item-box-blog-image img {
+                width: 100%;
+                height: auto;
+            }
+
+        .item-box-blog-date {
+            display: inline-block;
+            padding: 4px 20px;
+            <!-- position: absolute;
+            z-index: 5;
+            top: -20px;
+            right: 8px;
+            background-color: #41cb52; -->
+        }
+
+            .item-box-blog-date span {
+                color: #fff;
+                display: block;
+                text-align: center;
+                line-height: 1.2;
+            }
+                <!--
+                .item-box-blog-date span.mon {
+                    font-size: 18px;
+                }
+
+                -->
+                .item-box-blog-date span.mon {
+                    font-size: 1.25rem;
+                }
+
+                .item-box-blog-date span.day {
+                    font-size: 16px;
+                }
+
+  
+		               
+
+        .item-heading-blog a h5 {
+            margin: 0;
+            line-height: 1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .item-box-blog-heading a {
+            text-decoration: none;
+        }
+
+        .item-box-blog-data p {
+            font-size: 13px;
+        }
+
+            .item-box-blog-data p i {
+                font-size: 12px;
+            }
+
+        /*
+        .item-box-blog-text {
+          max-height: 100px;
+          overflow: hidden;
+        }
+        */
+        .mt-10 {
+            float: left;
+            margin-top: -10px;
+            padding-top: 10px;
+        }
+
+        .btn.bg-blue-ui.white.read {
+            cursor: pointer;
+            padding: 4px 20px;
+            float: left;
+            margin-top: 10px;
+        }
+
+            .btn.bg-blue-ui.white.read:hover {
+                box-shadow: 0px 5px 15px inset #4d5f77;
+            }
+
+        .coloblack {
+            color: #000;
+        }
+
+        .myclsh5 h5 {
+            font-size: 31px;
+            line-height: 2px;
+        }
+
+        .mybuttonccls {
+            cursor: pointer;
+            padding: 4px 20px;
+            float: left;
+            margin-top: 10px;
+        }
+
+        .mybuttonccls {
+            background-color: #000 !important;
+        }
+
+        .myexcls {
+         <!--   display: inline-block; -->
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .myclsh5 h2 {
+            font-size: 40px;
+            display: block;
+        }
+
+        .myclsh5 h5 {
+            font-size: 30px;
+            line-height: 1px;
+            font-weight: 300;
+            margin-top: 20px;
+        }
+
+      
+        
+		.mystyle li {
+    list-style-type:none;
+	
+}	
+	.mystyle li a{
+   
+	    text-decoration: none;
+}
+.mymarg {
+    margin-left: 10px;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+	.btn-circle.btn-xl {
+			width: 100px;
+		<!-- 	height: 100px; -->
+			padding: 13px 18px;
+			border-radius: 60px;
+			font-size: 16px;
+			text-align: center;background-color: white;
+			color: #000;
+			font-weight:700;
+			
+		}
+		
+		.btn-circle.btn-xl:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.mgrem{margin-bottom:0px;}
+.img-thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0.375rem;
+    max-width: 100%;
+    height: auto;
+    max-height: 220px;
+}
+.item-box-blog-text .muextrcenter ul  {
+    padding-left: 0px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 0px;
+ color: var(--bs-card-color); 
+}
+
+figure {
+    margin: 0 0 0rem;
+}
+.card {
+    border: 0px transparent;
+}
+.card.mycard {
+    border: 0px;
+}
+.mycentercls li.lisls {
+    display: inline-block;
+    float: none;
+    text-align: center;
+
+}
+.myulcls li.lisls {
+    float: left;
+    display: contents;
+}
+ul.myulcls.mycentercls {
+    border: 1px solid;
+}
+ul.myulcls {
+    padding-left: 0px;
+}
+button.btn.btn-warning.rounded-pill {
+    background: green;
+    color: #fff;
+    border-color: green;
+}
+.btn-circle.btn-xl {
+    background-color: #5c8b75;
+    color: white;
+}
+<!--
+.item-box-blog {
+    border: 1px solid #e9b743de;
+    z-index: 4;
+    padding: 10px;
+    padding-bottom: 0px;
+
+
+-->
+    </style>
+
+
+
+    <script type="text/javascript">
+        window.onload = function () {
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const myParam = urlParams.get('id');
+
+            var element = document.getElementById(myParam).style.display = "block";
+
+            //alert(myParam);			
+			
+	
+        
+    };
+
+
+        
+
+    </script>
+	
+	
+	<script>
+	function myfunction() {
+	  const urlParams = new URLSearchParams(window.location.search);
+            const myParam = urlParams.get('id');
+		
+			location.href = 'phone.html?id='+myParam;
+			}
+			
+			
+	</script>
+	
+	
+	<script>
+	function myGallery() {
+	  const urlParams = new URLSearchParams(window.location.search);
+            const myParam = urlParams.get('id');
+		
+			location.href = 'gallery.php?id='+myParam;
+			}
+			
+			
+	</script>
+	
+</head>
+<!-- create table -->
+
+
+<!------ Include the above in your HEAD tag ---------->
+<body>
+    <div class="myexcls">
+
+
+
+
+        <div class="container">
+
+
+            <div >
+                <div class="panel">
+				
+				<!-- 10 Panorma Page Start--> 
+ <div id="10" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="10" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Panorama & Science Centre </div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2023/01/2023011740.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/panorama/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/panorama/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/events-in-kurukshetra/" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="#" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="https://teliportme.com/view/2069514?utm_medium=android&utm_source=share-panorama" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+  <li> <a href="https://kurukshetra.gov.in/panorama/#sightseeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li>
+
+  <li> <a href="https://kurukshetra.gov.in/panorama/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+  
+ <li> <a href="https://kurukshetra.gov.in/panorama/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+  <li> <a href="https://nickurukshetra.github.io/?id=7" tabindex="0" class="coloblack">
+
+   <h5><button type="button" class="btn btn-warning"><img src="images/quizimg.png" width="40px" height="40px"></button><span class="mymarg">InfoQuest</span></h5>
+                                          
+                                      </a>
+</li>
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>
+					  
+					  <!-- 10 Panorma Page End--> 
+
+             <!-- 01 Page About Kurukshetra  --> 
+				<div id="01" style='display:none;'>
+                          <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="01" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>About Kurukshetra</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/04/2022041374.jpeg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <!--<div class="card mycard">  -->
+  <div class="card mycard">
+  <div class="card-body mystyle">
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                               
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+								  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/about-district/" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/history" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/events-in-kurukshetra/" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+		
+
+
+										  
+</ul>
+</div>
+  <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2023/07/2023071480.mp3" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="https://kurukshetra.gov.in/panoramicview/" tabindex="0" class="coloblack">
+                                       
+										 
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+ <li> <a href="https://kurukshetra.gov.in/kurukshetraattractions/" tabindex="0" class="coloblack">
+
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+  <li> <a href="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2021/11/2021110888.pdf" tabindex="0" class="coloblack">
+  
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">InfoQuest </span></h5>
+                                       
+                                      </a>
+</li> 
+  <li> <a href="https://kurukshetra.gov.in/administrative-setup-kurukshetra/" tabindex="0" class="coloblack">
+
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Administrative Setup  </span></h5>
+                                          
+                                      </a>
+</li>  
+  <li> <a href="https://kurukshetra.gov.in/political-setup-kurukshetra/" tabindex="0" class="coloblack">
+
+   <h5><button type="button" class="btn btn-warning"><img src="images/quizimg.png" width="40px" height="40px"></button><span class="mymarg">Political Setup</span></h5>
+                                          
+                                      </a>
+</li>  
+
+
+
+
+</ul>  
+  
+  <hr>
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                          </div>
+                          </div>
+                      </div>							  					  
+			 <!--end 01 Page About Kurukshetra -->
+
+                        <!-- Carousel items -->
+
+
+				<div id="11" style='display:none;'>
+                          <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="11" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Sheikh Chaheli’s Tomb</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/01/2022011190-550x412.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <!--<div class="card mycard">  -->
+  <div class="card mycard">
+  <div class="card-body mystyle">
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                               
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+								  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/sheikh-chahelis-tomb/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/sheikh-chahelis-tomb/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+		
+
+
+										  
+</ul>
+</div>
+  <ul class="myulcls ">  
+  <hr>
+
+
+
+ <li>  
+ <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide </span> &nbsp;&nbsp;<div class="dropdown">
+  <button class="dropbtn">Choose Language</button>
+  <div class="dropdown-content">
+    <a href="https://www.youtube.com/watch?v=xldMv6MQjOM">Hindi</a>
+    <a href="https://youtu.be/v421B2mU5kQ">English</a>
+
+  </div>
+</div></h5>
+                                      
+
+</li> 
+
+ <li> <a href="https://teliportme.com/view/2067863?utm_medium=android&utm_source=share-panorama" tabindex="0" class="coloblack">
+                                       
+										 
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+ <li> <a href="https://www.mappls.com/@jrvoetvv,omqjovos,lrjeajfsvatevsfea,l,f,f,of,f,l,f,zdata" tabindex="0" class="coloblack">
+
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/sheikh-chahelis-tomb/#SightSeeing" tabindex="0" class="coloblack">
+
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li> 
+
+<li> <a href="https://kurukshetra.gov.in/sheikh-chahelis-tomb/#nearby" tabindex="0" class="coloblack">
+  
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By (Directions) </span></h5>
+                                       
+                                      </a>
+</li> 
+
+ <li> <a href="https://www.google.com/maps/place/Sheikh+Chilli+Tomb/@29.976698,76.8259214,17z/data=!3m1!4b1!4m5!3m4!1s0x390e4701deaf1a87:0xba52437e014c2ea5!8m2!3d29.976698!4d76.8281101" tabindex="0" class="coloblack">
+
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+  
+ 
+  <li> <a href="https://nickurukshetra.github.io/?id=3" tabindex="0" class="coloblack">
+
+   <h5><button type="button" class="btn btn-warning"><img src="images/quizimg.png" width="40px" height="40px"></button><span class="mymarg">InfoQuest</span></h5>
+                                          
+                                      </a>
+</li>  
+
+   <div class="">
+					 <a href="https://kurukshetra.gov.in/sheikh-chahelis-tomb/" class="white"><button type="button" 
+					 class="btn btn-success btn-circle btn-xl" style="
+        background-color: #5c8b75;
+    width: auto;
+} ">Main Page</button></a>
+					                        </div>
+
+
+</ul>  
+  
+  <hr>
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                          </div>
+                          </div>
+                      </div>
+					  
+					  
+					  
+					  
+					  
+					  
+			 <!--end -->	
+			 
+			 
+			 
+			  <!--Start -->
+				<div id="12" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="12" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Sannehit Sarovar </div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/01/2022012536.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  
+						  
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                                 
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/sannehitsarover/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/sannehitsarover/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/sannehitsarover/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+ <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2023/05/2023051173.mp3" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="https://teliportme.com/view/2065568?utm_medium=android&utm_source=share-panorama" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/sannehitsarover/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li>  
+
+  <li> <a href="https://kurukshetra.gov.in/sannehitsarover/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+
+ <li> <a href="https://kurukshetra.gov.in/sannehitsarover/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                          </div>
+                          </div>
+                      </div>
+					  
+
+
+
+
+
+              
+
+                            <div id="13" style='display:none;'>
+                             <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                                    <div class="item-box-blog">
+                                        <div class="item-box-blog-image">
+                                            <!--Date-->
+											
+											
+                                            <div id="13" class="item-box-blog-date bg-blue-ui white"> <span class="mon">Lakshmi Narayan Mandir</span> </div>
+                                            <!--Image-->
+                                            <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/01/2022012752-580x400.jpg" class="img-fluid img-thumbnail" >  </figure>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                   
+<div class="card mycard">
+ 
+  <div class="card-body mystyle">
+  
+
+								
+                             <div class="col-md-8">
+							 
+                                    <div class="item-box-blog-body">
+                                  
+                                        <!--Data
+                <div class="item-box-blog-data" style="padding: px 15px;">
+                  <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                </div>
+                <!--Text-->
+                                        <div class="item-box-blog-text" class="coloblack">
+
+                                                                     								                                  							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/lakshmi-narayan-mandir/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/lakshmi-narayan-mandir/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+ <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2023/01/2023012460.mp3" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+  <li> <a href="#" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/lakshmi-narayan-mandir/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+ 
+
+ <li> <a href="https://kurukshetra.gov.in/lakshmi-narayan-mandir/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+</ul> 
+        
+
+<hr>
+
+
+
+
+
+                                        </div>
+
+                                        <!--Read More Button-->
+                                    </div>
+
+                                </div>
+                            </div>
+							
+							
+							
+							</div>
+
+</div>
+          
+					 
+					 
+                      <div id="14" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="14" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Baba Shrawan Nath Haveli</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2018/03/2018030883.jpg" class="img-fluid img-thumbnail"> </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+  
+
+								
+                             <div class="col-md-8">
+							 
+                                    <div class="item-box-blog-body">
+						  
+                      
+                          
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                                                  <div class="item-box-blog-text" >
+
+
+                                  							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/baba-shrawan-nath-haveli/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/baba-shrawan-nath-haveli/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+ <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2023/03/2023030299.mp3" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+
+  <li> <a href="https://kurukshetra.gov.in/baba-shrawan-nath-haveli/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/baba-shrawan-nath-haveli/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+ 
+ <li> <a href="https://kurukshetra.gov.in/baba-shrawan-nath-haveli/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+ 
+
+
+
+                                  </div>
+                         
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+					                            </div>
+
+					                        </div>
+					  
+					  
+					       
+                      <div id="15" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="15" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Tirupati Balaji Mandir </div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2018/11/2018112762-600x400.jpeg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/tirupati-balaji/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/tirupati-balaji/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/tirupati-balaji/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  
+ <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide </span> &nbsp;&nbsp;<div class="dropdown">
+  <button class="dropbtn">Choose Language</button>
+  <div class="dropdown-content">
+    <a href="https://www.youtube.com/watch?v=p2k9FkjP4xI">Hindi</a>
+    <a href="https://www.youtube.com/watch?v=5NbfHM3YEeA">English</a>
+
+  </div>
+</div></h5>
+                                      
+
+</li> 
+
+
+
+ <li> <a href="https://teliportme.com/view/2069147?utm_medium=android&utm_source=share-panorama" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/tirupati-balaji/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li>  
+
+
+  <li> <a href="https://kurukshetra.gov.in/tirupati-balaji/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+
+ <li> <a href="https://kurukshetra.gov.in/tirupati-balaji/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>
+
+ <!--Start -->
+				<div id="16" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="16" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Jyotisar  </div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/01/2022012587-1-580x400.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                               
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/jyotisar/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/jyotisar/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/jyotisar/#event" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+  <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2023/06/2023062043.mp3" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="https://teliportme.com/view/2065129?utm_medium=android&utm_source=share-panorama" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/jyotisar/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li>  
+
+  <li> <a href="https://kurukshetra.gov.in/jyotisar/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+
+ <li> <a href="https://kurukshetra.gov.in/jyotisar/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+
+    
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                          </div>
+                          </div>
+                      </div>
+					  
+					  
+					  
+					  
+					  
+					  
+			 <!--end -->	
+
+ <!--Start -->
+				<div id="17" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="17" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Karn Ka Tila</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/02/2022020849.png" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                                
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/karn-ka-tila/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/karn-ka-tila/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+  <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="https://kurukshetra.gov.in/karn-ka-tila/#virtualguide" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+   <li> <a href="https://kurukshetra.gov.in/karn-ka-tila/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li>  
+  <li> <a href="https://kurukshetra.gov.in/karn-ka-tila/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+
+
+<li> <a href="https://kurukshetra.gov.in/karn-ka-tila/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+</ul> 
+        
+
+<hr>
+
+   
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+                              </div>
+                              </div>
+
+                          </div>
+                      </div>
+					  
+					  
+					  
+					  
+					  
+					  
+			 <!--end -->	
+			 
+			 
+			  <!--Start -->
+
+					  
+					  
+			
+					  
+		
+
+                        <div  id="18" style='display:none;'>
+                         <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                                <div class="item-box-blog">
+                                    <div class="item-box-blog-image">
+                                        <!--Date-->
+                                        <div id="18" class="item-box-blog-date bg-blue-ui white"> <span class="mon">Brahma Sarovar</span> </div>
+                                        <!--Image-->
+										
+										   <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/02/2022020481.jpg" class="img-fluid img-thumbnail" >  </figure>
+                                        </div>
+                                       
+
+                                </div>
+                            </div>
+                           
+						  <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+  
+                             <div class="col-md-8">
+							 
+                                        <div class="item-box-blog-body">
+                                            <!--Heading-->
+                                          
+  <div class="item-box-blog-text" class="coloblack">
+  
+                                  							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/brahmasarovar/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/brahmasarovar/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/brahmasarovar/#event" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="#" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="https://teliportme.com/view/2071239?utm_medium=android&utm_source=share-panorama" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+ <li> <a href="#" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+
+  <li> <a href="https://kurukshetra.gov.in/brahmasarovar/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li>  
+
+  <li> <a href="https://kurukshetra.gov.in/brahmasarovar/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+ <li> <a href="https://kurukshetra.gov.in/brahmasarovar/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+  <li> <a href="https://nickurukshetra.github.io/?id=1" tabindex="0" class="coloblack">
+
+   <h5><button type="button" class="btn btn-warning"><img src="images/quizimg.png" width="40px" height="40px"></button><span class="mymarg">InfoQuest</span></h5>
+                                          
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+
+  
+    
+ 
+                                            <!-- <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div> -->
+                                            <!--Read More Button-->
+                                        </div>
+                                    </div>
+                                </div>
+								</div></div></div>
+                            	</div>
+                            <!--.row-->
+
+                 <div id="19" style='display:none;'>
+                             <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                                    <div class="item-box-blog">
+                                        <div class="item-box-blog-image">
+                                            <!--Date-->
+											
+											
+                                            <div id="19" class="item-box-blog-date bg-blue-ui white"> <span class="mon">Baba Kali Kamli Mandir</span> </div>
+                                            <!--Image-->
+                                            <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/01/2022012085.jpg" class="img-fluid img-thumbnail" >  </figure>
+                                        </div>
+
+                                    </div>
+                                </div>
+								
+								             
+							
+                                      
+                                        
+                                    
+<div class="card mycard">
+ 
+  <div class="card-body mystyle">
+  
+
+								
+                             <div class="col-md-8">
+							 
+                                    <div class="item-box-blog-body">
+                                  
+                                        <!--Data
+                <div class="item-box-blog-data" style="padding: px 15px;">
+                  <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                </div>
+                <!--Text-->
+                                        <div class="item-box-blog-text" class="coloblack">
+
+                                  							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/baba-kali-kamli-mandir/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/baba-kali-kamli-mandir/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+
+
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="https://kurukshetra.gov.in/baba-kali-kamli-virtualguide/" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+
+  <li> <a href="https://kurukshetra.gov.in/baba-kali-kamli-mandir/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/baba-kali-kamli-mandir/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+ 
+ <li> <a href="https://kurukshetra.gov.in/baba-kali-kamli-mandir/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+  
+
+
+
+
+                                        </div>
+
+                                        <!--Read More Button-->
+                                    </div>
+
+                                </div>
+                            </div>
+							
+							
+							
+							</div>
+							 </div>
+
+
+					 
+                      <div id="20" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="20" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span> Sri Krishna Museum</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2018/05/2018050158-550x412.jpg" class="img-fluid img-thumbnail" </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+  
+
+								
+                             <div class="col-md-8">
+							 
+                                    <div class="item-box-blog-body">
+						  
+                      
+                          
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                                                  <div class="item-box-blog-text" >
+
+
+                                  							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/srikrishna-museum/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/srikrishna-museum/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/srikrishna-museum/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+
+
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="#" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="https://teliportme.com/view/2062780" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+
+  <li> <a href="https://kurukshetra.gov.in/srikrishna-museum/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li> 
+  <li> <a href="https://kurukshetra.gov.in/srikrishna-museum/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+ <li> <a href="https://kurukshetra.gov.in/srikrishna-museum/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+  <li> <a href="https://nickurukshetra.github.io/?id=4" tabindex="0" class="coloblack">
+
+   <h5><button type="button" class="btn btn-warning"><img src="images/quizimg.png" width="40px" height="40px"></button><span class="mymarg">InfoQuest</span></h5>
+                                          
+                                      </a>
+</li> 
+
+
+
+</ul> 
+        
+
+<hr>
+  
+        
+
+
+
+                                  </div>
+                         
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+					                            </div>
+                      </div>
+					
+</div>
+
+                      <div id="21" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="21" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Shri Devikoop Bhadrakali Shaktipeeth</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/01/2022012514.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/tirupati-balaji/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/shaktipeeth/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/shaktipeeth/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="#" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="#" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+
+  <li> <a href="https://kurukshetra.gov.in/shaktipeeth/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/shaktipeeth/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+ 
+ <li> <a href="https://kurukshetra.gov.in/shaktipeeth/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>
+<div id="22" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="22" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Harsh Ka Tila</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/01/2022012821-550x400.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/tirupati-balaji/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/shaktipeeth/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/shaktipeeth/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="#" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="#" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+
+  <li> <a href="https://kurukshetra.gov.in/shaktipeeth/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li>  
+  <li> <a href="https://kurukshetra.gov.in/shaktipeeth/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+
+ <li> <a href="https://kurukshetra.gov.in/shaktipeeth/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>
+					  <div id="23" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="23" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Dharohar, Haryana Museum</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2017/03/2022011151-1.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/ban-ganga/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/ban-ganga/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/ban-ganga/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="#" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="#" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="https://kurukshetra.gov.in/ban-ganga/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/ban-ganga/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+  
+ <li> <a href="https://kurukshetra.gov.in/ban-ganga/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>
+					  <div id="24" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="24" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Sthaneshwar Mahadev Mandir</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/01/2022013186-1-scaled-600x400.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/sthaneshwar/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/sthaneshwar/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/sthaneshwar/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="#" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="#" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+
+  <li> <a href="https://kurukshetra.gov.in/sthaneshwar/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li>  
+
+  <li> <a href="https://kurukshetra.gov.in/sthaneshwar/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+
+ <li> <a href="https://kurukshetra.gov.in/sthaneshwar/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>
+					  
+					  <div id="25" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="25" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Chhevin Patshahi</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2018/03/2018032091.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/gurudwara-6th-patshahi/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/gurudwara-6th-patshahi/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/gurudwara-6th-patshahi/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="#" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="https://teliportme.com/view/2068931?utm_medium=android&utm_source=share-panorama" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+
+  <li> <a href="https://kurukshetra.gov.in/gurudwara-6th-patshahi/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li>  
+
+ <li> <a href="https://www.google.com/maps/place/Gurudwara+Patshahi+Chewin,+SH+6,+Thanesar,+Haryana+136118/@29.969017,76.8340754,15z/data=!4m5!3m4!1s0x0:0x3c1d73690c8780f7!8m2!3d29.969017!4d76.8340754?shorturl=1" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+  <li> <a href="https://kurukshetra.gov.in/gurudwara-6th-patshahi/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>
+					  
+					  <!---25 end -->
+					  				 <div id="26" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="26" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Nabha House</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/01/2022011378.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/nabha-house/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/nabha-house/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="#" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="https://youtu.be/c9PdmyS79Lg" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide</span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="#" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+ 
+
+  <li> <a href="https://kurukshetra.gov.in/nabha-house/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li>  
+
+  <li> <a href=https://kurukshetra.gov.in/nabha-house/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+
+<li> <a href="https://kurukshetra.gov.in/nabha-house/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>
+
+					  					  <div id="27" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="27" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Birla Mandir</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2023/08/2023082429.jpeg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/birla-mandir/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/birla-mandir/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/birla-mandir/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  
+ <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide </span> &nbsp;&nbsp;<div class="dropdown">
+  <button class="dropbtn">Choose Language</button>
+  <div class="dropdown-content">
+    <a href="https://www.youtube.com/watch?v=hYI5TpD90Qw">Hindi</a>
+    <a href="https://www.youtube.com/watch?v=ZNgCE8cOFz8">English</a>
+
+  </div>
+</div></h5>
+                                      
+
+</li> 
+
+
+
+ <li> <a href="#" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+
+  <li> <a href="https://kurukshetra.gov.in/birla-mandir/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/birla-mandir/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+ 
+
+ <li> <a href="https://kurukshetra.gov.in/birla-mandir/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>
+					  
+					  
+					  
+					  
+					  
+					  
+	  <div id="28" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="28" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>1857 War Museum</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2023/01/2023011812.jpeg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/1857-war-museum/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/1857-war-museum/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/1857-war-museum/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="#" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide </span></h5>
+                                      </a>
+</li> 
+
+
+
+
+ <li> <a href="#" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/1857-war-museum/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/1857-war-museum/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+ 
+
+ <li> <a href="https://kurukshetra.gov.in/1857-war-museum/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>	
+
+
+	  <div id="29" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="29" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Mini Zoo</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/01/2022011177.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/mini-zoo/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/mini-zoo/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/mini-zoo/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="3" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide </span></h5>
+                                      </a>
+</li> 
+
+
+
+
+ <li> <a href="#" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/mini-zoo/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/mini-zoo/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+ 
+ <li> <a href="https://kurukshetra.gov.in/mini-zoo/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>			
+
+	  <div id="30" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="30" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Ban Ganga</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2022/01/2022012715.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/ban-ganga/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/ban-ganga/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/ban-ganga/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="3" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide </span></h5>
+                                      </a>
+</li> 
+
+
+
+
+ <li> <a href="#" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+
+<li> <a href="https://kurukshetra.gov.in/ban-ganga/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li>  
+  <li> <a href="https://kurukshetra.gov.in/ban-ganga/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+  
+ <li> <a href="https://kurukshetra.gov.in/ban-ganga/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>
+
+		
+	  <div id="31" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="31" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Shaheed Smarak</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2023/09/2023091371.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="https://www.youtube.com/watch?v=wi5h8obNWZU" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide </span></h5>
+                                      </a>
+</li> 
+
+
+
+
+ <li> <a href="#" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+
+  <li> <a href="#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li>  
+
+  <li> <a href="#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+
+ <li> <a href="#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>
+    	
+	  <div id="32" style='display:none;'>
+                       <div class="col-md-4 padbotcls" style="padding-bottom: 5px;">
+                              <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      <div id="32" class="item-box-blog-date bg-blue-ui white"> <span class="mon"></span>Rantuk Yaksha</div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2023/09/2023091371.jpg" class="img-fluid img-thumbnail" > </figure>
+                                  </div>
+
+                              </div>
+                          </div>
+						  	 <div class="card mycard">
+ 
+  <div class="card-body mystyle">
+						  
+                          <div class="col-md-8">
+                              <div class="item-box-blog-body">
+                                  <!--Heading-->
+                              
+                                  <!--Data
+                    <div class="item-box-blog-data" style="padding: px 15px;">
+                      <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                    </div>
+                    <!--Text-->
+                                  <div class="item-box-blog-text">
+                                  		                                   							  <div class="muextrcenter">
+                                  		  <ul class="mycentercls">  
+
+<li class="lisls"> <a href="https://kurukshetra.gov.in/rantuk-yaksha-bid-pipli/#about" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>About</button></a></li>
+	<li class="lisls"> <a href="https://kurukshetra.gov.in/rantuk-yaksha-bid-pipli/#howtoreach" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Map</button></a></li>	
+		<li class="lisls"> <a href="https://kurukshetra.gov.in/rantuk-yaksha-bid-pipli/#events" tabindex="0" class="coloblack"><button class="btn btn-success btn-circle btn-xl"><p class="mgrem"></p>Event</button></a></li>
+
+
+										  
+</ul>
+</div>
+   <ul class="myulcls ">  
+  <hr>
+
+ <li>  <a href="3" tabindex="0" class="coloblack">
+                                  
+										  <h5><button type="button" class="btn btn-warning"><img src="images/headphones.png" width="40px" height="40px"></button><span class="mymarg">Virtual Guide </span></h5>
+                                      </a>
+</li> 
+
+
+
+
+ <li> <a href="#" tabindex="0" class="coloblack">
+                                       
+										   <h5><button type="button" class="btn btn-warning"><img src="images/camera-fill.png" width="40px" height="40px"></button><span class="mymarg">Panoramic View </span></h5>
+                                      </a>
+</li> 
+
+
+
+ <li> <a href="" tabindex="0" class="coloblack">
+ <h5><button type="button" class="btn btn-warning"><img src="images/3DVIE.png" width="40px" height="40px"></button><span class="mymarg">3D View </span></h5>
+                                         
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/rantuk-yaksha-bid-pipli/#SightSeeing" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/sightsceen.png" width="40px" height="40px"></button><span class="mymarg">Sight Seeing  </span></h5>
+                                          
+                                      </a>
+</li> 
+
+  <li> <a href="https://kurukshetra.gov.in/rantuk-yaksha-bid-pipli/#nearby" tabindex="0" class="coloblack">
+   <h5><button type="button" class="btn btn-warning"><img src="images/pin-map-fill.png" width="40px" height="40px"></button><span class="mymarg">Near By </span></h5>
+                                       
+                                      </a>
+</li> 
+ 
+
+ <li> <a href="https://kurukshetra.gov.in/rantuk-yaksha-bid-pipli/#tourguide" tabindex="0" class="coloblack">
+  <h5><button type="button" class="btn btn-warning"><img src="images/nearby.png" width="40px" height="40px"></button><span class="mymarg">Tour Guide</span></h5>
+                                         
+                                      </a>
+</li>
+
+</ul> 
+        
+
+<hr>
+
+  
+        
+
+
+
+                                  </div>
+                               
+                                  <!--Read More Button-->
+                              </div>
+
+                          </div>
+                      </div>
+					  
+       </div>
+                      </div>	
+
+    					  
+					  <!--- ------------------------------>
+                  <div class="text-center">
+					 <!--  <button type="button" id="mybutton" class="btn btn-warning rounded-pill" onclick='myfunction()'>आपकी यात्रा के कुछ क्षण हमारे संग</button>
+					   <button type="button" id="mybutton" class="btn btn-warning rounded-pill" onclick='myGallery()'>Gallery</button>-->
+					   <a href="index.html" class="white "><button type="button" class="btn btn-warning rounded-pill">Back To Home</button></a>
+					                        </div>
+
+
+		</div>
+		  
+		
+		</div>
+
+  </div>
+
+                            <!--end -->
+			
+
+
+
+
+                        </div>
+						
+						
+
+	  
+                    <!--.item-->
+                </div>
+                <!--.item-->
+   
+
+
+<script>
+	
+	
+		
+    
+
+		
+		
+
+		
+		</script>
+   
+
+<!--- Dropdown button -->
+<style>
+  button.dropbtn {
+    font-weight: 700;
+    font-size: 12px !important;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 6px 4px 5px;
+}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+      font-size: 12px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+</style>
+   <!--- Dropdown button -->
+</body>  
+
+</html>

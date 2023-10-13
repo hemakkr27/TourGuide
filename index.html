@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<!------ Include the above in your HEAD tag ---------->
+
+	<script>
+		$(document).ready(function () {
+
+
+			$('.num').click(function () {
+				              
+                
+				var num = $(this);
+				var text = $.trim(num.find('.txt').clone().children().remove().end().text());
+				var telNumber = $('#telNumber');
+                if(telNumber.val().length<2)
+				{
+                    $(telNumber).val(telNumber.val() + text);
+				}
+				
+			});
+
+
+            $('.clr').click(function () {
+                var num = $(this);
+                var text = $.trim(num.find('.txt').clone().children().remove().end().text());
+              
+                $(telNumber).val("");
+			});
+
+
+            $('.go').click(function () {
+
+                
+               
+               
+                var telNumber = $('#telNumber');
+                if (telNumber.val().length >= 2) {
+					var v = telNumber.val();
+					location.href = 'secpage.html?id=' + v;
+					return false;
+					
+                }
+
+            });
+
+            
+
+		});
+	</script>
+	<!-- for styling -->
+	<style>
+	
+
+        body {
+            /* background-image: url('bg.jpg');
+            background-size:auto;
+			background-repeat:no-repeat;*/
+            background-color: #f5f5f5;
+        }
+
+
+
+		@import url(http://fonts.googleapis.com/css?family=Lato:300);
+		@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Lato', sans-serif;
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-size-adjust: none;
+		}
+
+		p {
+			margin: 0;
+			padding: 0 0 10px 0;
+			line-height: 20px;
+		}
+
+		.span4 {
+			width: 80px;
+			float: left;
+			margin: 0 8px 10px 8px;
+		}
+
+		.phone {
+			margin-top: 15px;
+			background: #fff;
+		}
+
+        .tel {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border: 1px solid #9e9e9e;
+            border-radius: 0px;
+            font-size: 22px;
+			font-weight:bold;
+            border: none;
+            border-radius: 5px;
+            border: 2px solid;
+			height:50px;
+			text-align:center;
+        }
+
+        .num-pad {
+            align-content: center;
+            
+			align-items:center;
+        }
+
+
+        .num {
+            box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.1), 0 5px 20px 5px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #9e9e9e;
+
+            /*-webkit-border-radius: 999px;
+            border-radius: 999px;
+            -moz-border-radius: 999px;*/
+            height: 80px;
+            background-color: #8fbc8f42;
+            color: #333;
+            cursor: pointer;
+        }
+		a.btn.btn-danger.viewall {
+              float: right;
+             }
+
+        .go {
+            border: 1px solid #9e9e9e;
+            -webkit-border-radius: 999px;
+           border-radius: 999px;
+            -moz-border-radius: 999px;
+            height: 80px;
+            background-color: #85cc86ed;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .clr {
+            border: 1px solid #9e9e9e;
+            -webkit-border-radius: 999px;
+            border-radius: 999px;
+            -moz-border-radius: 999px;
+            height: 80px;
+            background-color: #ffc1078c;
+            color: #333;
+            cursor: pointer;
+        }
+
+			.num:hover {
+				background-color: #9e9e9e;
+				color: #fff;
+				transition-property: background-color .2s linear 0s;
+				-moz-transition: background-color .2s linear 0s;
+				-webkit-transition: background-color .2s linear 0s;
+				-o-transition: background-color .2s linear 0s;
+			}
+
+		.txt {
+			font-size: 30px;
+			text-align: center;
+			margin-top: 15px;
+			font-family: 'Lato', sans-serif;
+			/*line-height: 30px;*/
+			color: #333;
+		}
+
+		.small {
+			font-size: 15px;
+		}
+
+		.btn {
+			font-weight: bold;
+			-webkit-transition: .1s ease-in background-color;
+			-webkit-font-smoothing: antialiased;
+			letter-spacing: 1px;
+		}
+
+			.btn:hover {
+				transition-property: background-color .2s linear 0s;
+				-moz-transition: background-color .2s linear 0s;
+				-webkit-transition: background-color .2s linear 0s;
+				-o-transition: background-color .2s linear 0s;
+			}
+
+		.spanicons {
+			width: 72px;
+			float: left;
+			text-align: center;
+			margin-top: 40px;
+			color: #9e9e9e;
+			font-size: 30px;
+			cursor: pointer;
+		}
+
+			.spanicons:hover {
+				color: #3498db;
+				transition-property: color .2s linear 0s;
+				-moz-transition: color .2s linear 0s;
+				-webkit-transition: color .2s linear 0s;
+				-o-transition: color .2s linear 0s;
+			}
+
+		.active {
+			color: #3498db;
+		}
+		
+			@media only screen and (max-width: 600px) {
+ .span4 {
+			width: 72px;
+			float: left;
+			margin: 0 8px 10px 8px;
+			
+		}
+}
+
+	</style>
+</head>
+<!-- create table -->
+
+<body>
+	<div class="container">
+		<br />
+		
+
+
+
+			<div id="demo" class="carousel slide" data-bs-ride="carousel" >
+
+				<!-- Indicators/dots -->
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+				</div>
+
+				<!-- The slideshow/carousel -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2018/06/2018060167.png" alt="" class="d-block" style="width:100%;">
+					</div>
+
+					<div class="carousel-item">
+						<img src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2018/06/2018060670.jpg" class="d-block" alt="" style="width:100%;">
+					</div>
+
+					<div class="carousel-item">
+						<img src="https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2018/06/2018060641.jpg" alt="" class="d-block" style="width:100%;">
+					</div>
+				</div>
+
+				<!-- Left and right controls/icons -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</button>
+			</div>
+
+
+
+		
+				<hr />
+				
+				
+			
+
+
+				<div class="container">
+
+					<div class="row" style="box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.1), 0 5px 20px 5px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.1)">
+						
+							<div style="background-color: darkseagreen;color:black;">
+								<h2 style="text-align:center"><i> Kurukshetra Tour Guide</i> <a href="http://103.87.24.58/tourguide/viewall.html" class="btn btn-danger viewall">All Sites</a></h2> 
+							</div>
+						
+						<!--<img src="ktg.png" alt="" class="img-responsive"/>-->
+						<div class="col-md-4 col-md-offset-4 phone">
+							<div class="row1">
+								<div class="col-md-12">
+									<input type="tel" name="name" id="telNumber" class="form-control tel" value="" maxlength="2" readonly style="background-color:#f7f5eb" />
+									<div class="num-pad">
+										<div class="span4">
+											<div class="num">
+												<div class="txt">
+													1
+												</div>
+											</div>
+										</div>
+										<div class="span4">
+											<div class="num">
+												<div class="txt">
+													2 <span class="small">
+														<p>
+
+														</p>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="span4">
+											<div class="num">
+												<div class="txt">
+													3
+												</div>
+											</div>
+										</div>
+										<div class="span4">
+											<div class="num">
+												<div class="txt">
+													4
+												</div>
+											</div>
+										</div>
+										<div class="span4">
+											<div class="num">
+												<div class="txt">
+													5
+												</div>
+											</div>
+										</div>
+										<div class="span4">
+											<div class="num">
+												<div class="txt">
+													6
+												</div>
+											</div>
+										</div>
+										<div class="span4">
+											<div class="num">
+												<div class="txt">
+													7
+												</div>
+											</div>
+										</div>
+										<div class="span4">
+											<div class="num">
+												<div class="txt">
+													8
+												</div>
+											</div>
+										</div>
+										<div class="span4">
+											<div class="num">
+												<div class="txt">
+													9
+												</div>
+											</div>
+										</div>
+										<!--<div class="span4">
+							<div class="num">
+								<div class="txt">
+									*
+								</div>
+							</div>
+						</div>-->
+										<div class="span4">
+											<div class="num">
+												<div class="txt">
+													0
+												</div>
+											</div>
+										</div>
+										<div class="span4">
+											<div class="clr">
+												<div class="txt">
+													C
+												</div>
+											</div>
+										</div>
+										<div class="span4 ">
+											<div class="go">
+												<div class="txt">
+													Go
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="clearfix">
+									</div>
+									<div class="col-md-4 ">
+										
+										
+										<!--<div class="text-center">
+				<a href="#" class="btn btn-danger">Visit All</a>
+					  <a href="gallerywithid.php" class="white "><button type="submit1" name="gallery" class="btn btn-dark ">Gallery</button></a>
+					  
+					  </div> -->
+					                        </div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+
+
+									</div>
+								</div>
+								<div class="clearfix">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+
+		
+	
+		
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		// Function that display value
+		function dis(val) {
+		
+			if(document.getElementById("result").value.length>=2)
+			{
+			
+			return;
+			}
+			document.getElementById("result").value += val
+			
+		}
+		
+		// Function that clear the display
+		function clr() {
+			document.getElementById("result").value = ""
+		}
+		
+		
+    document.getElementById("myButton").onclick = function () {
+	if(document.getElementById("result").value.length>=2)
+			{
+			var v=document.getElementById("result").value;
+			
+			location.href = 'secpage.html?id='+v;
+			
+			
+			
+			}
+        
+    };
+
+		
+		
+
+		
+		</script>
+		
+
+	
+</body>
+
+</html>
